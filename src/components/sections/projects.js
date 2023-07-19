@@ -242,9 +242,7 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-            <a href={external} target="_blank" rel="noreferrer">
               {title}
-            </a>
           </h3>
 
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
@@ -264,13 +262,8 @@ const Projects = () => {
   };
 
   return (
-    <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
-
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
-        view the archive
-      </Link>
-
+    <StyledProjectsSection id="projects">
+      <h2 className="numbered-heading" ref={revealTitle}>Some things I've built</h2>
       <ul className="projects-grid">
         {prefersReducedMotion ? (
           <>
@@ -302,9 +295,7 @@ const Projects = () => {
         )}
       </ul>
 
-      <button className="more-button" onClick={() => setShowMore(!showMore)}>
-        Show {showMore ? 'Less' : 'More'}
-      </button>
+
     </StyledProjectsSection>
   );
 };
