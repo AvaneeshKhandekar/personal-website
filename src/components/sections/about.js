@@ -136,9 +136,18 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello there! My name is Avaneesh and I am a skilled full stack developer with a passion for technology and a strong track record of
-              3 years of experience at{' '}
-              <a href="https://www.tcs.com/">Tata Consultancy Services</a>. While working there, I gained expertise in building cloud solutions
+              Hello there! My name is Avaneesh and I am a software developer with a passion for technology and data.
+              </p>
+              <p>
+              This summer, I had the exciting opportunity to intern at{' '}<a href="https://www.citizensfla.com/">Citizens Property Insurance Corporation</a>, 
+              where I leveraged my passion for AI to create a cutting-edge Retrieval Augmented Generation (RAG) Q&A chatbot powered by LLM. 
+              This innovative chatbot was designed to transform the way financial and budget data is accessed and analyzed within the company enhancing real-time analysis capabilities.
+              My work aimed to empower the organization with advanced AI tools, driving better business outcomes through intelligent data management.
+              </p>
+              <p>
+              Prior to this, I spent 3 years at{' '}
+              <a href="https://www.tcs.com/">Tata Consultancy Services</a>. I worked as a Full Stack Developer for {' '}<a href="https://investor.vanguard.com/corporate-portal">The Vanguard Group</a>. 
+              While working there, I gained expertise in building cloud solutions
               and acquired the{' '}<a href="https://www.credly.com/badges/cfa8afa0-ee04-4491-9ed5-73b09b786cb9/public_url">AWS Developer Certification</a>.
               However, my interests and talents extend far beyond the realm of cloud computing.
             </p>
@@ -147,23 +156,18 @@ const About = () => {
               I have a keen interest in computer vision, neural networks, and data science.
               Fostering this interest, I have invested personal time and effort into executing various projects in these domains including
               my capstone undergrad project at{' '}<a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies Private Limited</a>.
-              There, I created an application that detected defects in fuse box assemblies by identifying incorrect fuse placements based on their colors using
-              object detection and neural networks.
+              There, I developed an application for defect detection in fuse box assemblies using object detection and neural networks.
             </p>
-
             <p>
-              Outside the tech world, I am a huge Star Wars fan and actively follow sports.
-              I am an avid football fan, with a heart devoted to FC Barcelona, and equally enthusiastic about Formula One racing.
-              My unique dream is to unite my love for sports and technology by becoming an integral part of the sporting industry,
-              where I can leverage my technical skills to contribute to the development and advancement of sports-related technologies.
+              Outside the tech world, I love biking, I am a huge Star Wars fan and actively follow sports.
+              I am an avid football fan, with a heart devoted to FC Barcelona, and equally enthusiastic about Formula One racing.              
             </p>
-
             <p>
-              I am currently a Master's student majoring in Computer Science at the{' '}<a href="https://www.cise.ufl.edu/" target="_blank" rel="noreferrer">University of Florida, Gainesville</a>.
-              If I can be of any help, feel free to contact me:{' '}<a href={`mailto:${email}`}>Say Hi!</a>
+            I'm excited to bring my technical skills and passion for innovation to new challenges and opportunities. 
+            If you're looking for someone who combines a strong technical foundation with a drive for cutting-edge solutions,{' '}<a href={`mailto:${email}`}>let's connect!</a>
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few technologies I've been working with recently:</p>
           </div>
 
           <ul className="skills-list">

@@ -8,4 +8,4 @@ url: 'https://www.cise.ufl.edu/'
 ---
 
 - Cumulative GPA: 3.94/4.00
-- Relevant Coursework: Machine Learning Engineering, Natural Language Processing, Analysis of Algorithms, Advanced Data Structures, Computer Architecture Principles, Distributed Operating System Principles
+- Relevant Coursework: Machine Learning Engineering, Natural Language Processing, Analysis of Algorithms, Advanced Data Structures, Data Engineering, Data Science, Computer Network Security, Computer Architecture Principles, Distributed Operating System Principles
