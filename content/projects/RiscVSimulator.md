@@ -1,5 +1,5 @@
 ---
-order: '7'
+order: 9
 date: '2023-10-15'
 title: 'Simple RISC V Microprocessor Simulator'
 github: 'https://github.com/AvaneeshKhandekar/RISC-V-Simulator'

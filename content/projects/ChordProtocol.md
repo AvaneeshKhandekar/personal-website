@@ -1,5 +1,5 @@
 ---
-order: '6'
+order: 10
 date: '2023-10-15'
 title: 'Chord Communication Protocol'
 github: 'https://github.com/AvaneeshKhandekar/Chord-Protocol'

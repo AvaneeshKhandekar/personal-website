@@ -1,5 +1,5 @@
 ---
-order: '3'
+order: 8
 date: '2023-11-15'
 title: 'Library Management System'
 github: 'https://github.com/AvaneeshKhandekar/Gator-Library-Management-System'
