@@ -1,5 +1,5 @@
 ---
-order: 6
+order: 5
 date: '2024-10-02'
 title: 'Norman PD Incident Data Extractor'
 github: 'https://github.com/AvaneeshKhandekar/Norman-PD-Incident-Data-Extractor'
