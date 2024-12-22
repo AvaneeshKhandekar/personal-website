@@ -1,5 +1,5 @@
 ---
-order: '6'
+order: 6
 date: '2024-12-02'
 title: 'Norman PD Incident Data Visualization'
 github: 'https://github.com/AvaneeshKhandekar/Norman-PD-Incident-Data-Visualization'

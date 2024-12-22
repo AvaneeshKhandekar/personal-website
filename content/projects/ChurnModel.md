@@ -1,5 +1,5 @@
 ---
-order: '2'
+order: 2
 date: '2019-11-15'
 title: 'Customer Churn Prediction'
 github: 'https://github.com/AvaneeshKhandekar/Telco-Customer-Churn'
