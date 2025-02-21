@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 order: 7
-=======
-order: 5
->>>>>>> e20803f0f43117aeab16d0da1bdb968dbf32c767
 date: '2024-10-02'
 title: 'Norman PD Incident Data Extractor'
 github: 'https://github.com/AvaneeshKhandekar/Norman-PD-Incident-Data-Extractor'
