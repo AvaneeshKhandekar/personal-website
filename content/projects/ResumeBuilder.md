@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 order: 8
+=======
+order: 7
+>>>>>>> e20803f0f43117aeab16d0da1bdb968dbf32c767
 date: '2020-04-07'
 title: 'Resume Builder and Data Management System'
 github: 'https://github.com/AvaneeshKhandekar/Resume-Maker-With-Student-Database'

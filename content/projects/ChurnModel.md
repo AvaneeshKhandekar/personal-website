@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 order: 3
+=======
+order: 2
+>>>>>>> e20803f0f43117aeab16d0da1bdb968dbf32c767
 date: '2019-11-15'
 title: 'Customer Churn Prediction'
 github: 'https://github.com/AvaneeshKhandekar/Telco-Customer-Churn'
