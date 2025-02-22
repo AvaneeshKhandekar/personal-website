@@ -142,19 +142,19 @@ const About = () => {
               <p>
               Recently, I had the opportunity to intern at{' '}<a href="https://www.citizensfla.com/">Citizens Property Insurance Corporation</a>, 
               where I developed a Q&A chatbot powered by AI. Using Retrieval Augmented Generation (RAG) and large language models (LLMs), the chatbot allowed managers to ask complex questions in simple English that required real-time analysis 
-              and aggregation of financial and budget data. It was rewarding to see AI's real-world impact and how it reinforced my belief in technology's power to drive change.
+              and aggregation of financial and budget data. It was rewarding to see the real-world impact of AI and its potential to drive change.
               </p>
               <p>
-              Prior to this, I spent 3 years at{' '}
+              Before this, I spent 3 years at{' '}
               <a href="https://www.tcs.com/">Tata Consultancy Services</a>. I worked as a Full Stack Developer for {' '}<a href="https://investor.vanguard.com/corporate-portal">The Vanguard Group</a>. 
               During my time at TCS, I earned my {' '}<a href="https://www.credly.com/badges/cfa8afa0-ee04-4491-9ed5-73b09b786cb9/public_url">AWS Developer Certification</a> and worked on 
-              creating RESTful microservices and Angular UI applications hosted on Cloud to replace legacy systems with high-performance solutions. 
+              creating REST microservices and Angular UI applications on cloud replacing legacy systems with high-performance solutions. 
               I also built event-driven cloud applications like text notifications and data movement pipelines, and implemented multi-region cloud contingency for disaster recovery. 
               I led technical efforts as an interim technical lead, ensuring timely delivery of project milestones and trained new hires on technology and processes to improve team efficiency.              
             </p>
             <p>
               In addition to my primary pursuits,
-              I have a keen interest in computer vision, neural networks, and data science. I have invested personal time and effort into executing various projects in these domains 
+              I have a keen interest in machine learning and data science. I have invested time and effort into executing various projects in these domains 
               including my capstone undergrad project at{' '}<a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies Private Limited</a>.
               There, I developed an application for defect detection in fuse box assemblies using object detection and neural networks.
             </p>
