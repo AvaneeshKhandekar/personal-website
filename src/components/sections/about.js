@@ -126,7 +126,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'Java', 'Node.js', 'Angular', 'Typescript', 'Spring Boot', 'AWS', 'NoSQL'];
+  const skills = ['Python', 'Java', 'Go', 'Node.js', 'Angular', 'React', 'AWS', 'Azure', 'SQL', 'NoSQL'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -138,33 +138,36 @@ const About = () => {
             <p>
               Hello there! My name is Avaneesh and I am a software developer with a passion for technology and data.
               </p>
+              <p>For me, software is more than just code. It's the power to create, innovate, and solve problems.</p>
               <p>
-              This summer, I had the exciting opportunity to intern at{' '}<a href="https://www.citizensfla.com/">Citizens Property Insurance Corporation</a>, 
-              where I leveraged my passion for AI to create a cutting-edge Retrieval Augmented Generation (RAG) Q&A chatbot powered by LLM. 
-              This innovative chatbot was designed to transform the way financial and budget data is accessed and analyzed within the company enhancing real-time analysis capabilities.
-              My work aimed to empower the organization with advanced AI tools, driving better business outcomes through intelligent data management.
+              Recently, I had the opportunity to intern at{' '}<a href="https://www.citizensfla.com/">Citizens Property Insurance Corporation</a>, 
+              where I worked on creating a Q&A chatbot powered by AI. The chatbot, built using Retrieval Augmented Generation (RAG) and large language models (LLMs),
+              helped employees access and analyze financial and budget data in real time. It was exciting to see how applying AI to real-world problems made a tangible 
+              difference and strengthened my belief in the power of technology to drive change. This experience deepened my commitment to pushing the limits of what technology can achieve.
               </p>
               <p>
               Prior to this, I spent 3 years at{' '}
               <a href="https://www.tcs.com/">Tata Consultancy Services</a>. I worked as a Full Stack Developer for {' '}<a href="https://investor.vanguard.com/corporate-portal">The Vanguard Group</a>. 
-              While working there, I gained expertise in building cloud solutions
-              and acquired the{' '}<a href="https://www.credly.com/badges/cfa8afa0-ee04-4491-9ed5-73b09b786cb9/public_url">AWS Developer Certification</a>.
-              However, my interests and talents extend far beyond the realm of cloud computing.
+              During my time at TCS, I earned my {' '}<a href="https://www.credly.com/badges/cfa8afa0-ee04-4491-9ed5-73b09b786cb9/public_url">AWS Developer Certification</a> and was deeply involved in cloud computing, creating RESTful microservices and Angular UI applications 
+              hosted on Cloud to replace legacy systems with high-performance solutions. I also led technical efforts as an interim technical lead, ensuring the timely delivery of project
+              milestones. One of my proudest achievements was building an event-driven text notification system using AWS Lambda, Message Queues, and Cloud Notifications, 
+              which reduced missed appointments by 80%. Additionally, I developed a custom PII data masking library, enhanced data security compliance, and implemented multi-region cloud 
+              contingency for disaster recovery. My passion for innovation and technology drove me to improve team proficiency through training and continuously explore ways to optimize workflows, 
+              ensuring that we delivered impactful and cutting-edge solutions.
+              
             </p>
             <p>
               In addition to my primary pursuits,
-              I have a keen interest in computer vision, neural networks, and data science.
-              Fostering this interest, I have invested personal time and effort into executing various projects in these domains including
-              my capstone undergrad project at{' '}<a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies Private Limited</a>.
+              I have a keen interest in computer vision, neural networks, and data science. I have invested personal time and effort into executing various projects in these domains 
+              including my capstone undergrad project at{' '}<a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies Private Limited</a>.
               There, I developed an application for defect detection in fuse box assemblies using object detection and neural networks.
             </p>
             <p>
-              Outside the tech world, I love biking, I am a huge Star Wars fan and actively follow sports.
-              I am an avid football fan, with a heart devoted to FC Barcelona, and equally enthusiastic about Formula One racing.              
+              Outside of technology, I enjoy biking, am a huge Star Wars fan, and actively follow sports, especially football and Formula One racing..              
             </p>
             <p>
-            I'm excited to bring my technical skills and passion for innovation to new challenges and opportunities. 
-            If you're looking for someone who combines a strong technical foundation with a drive for cutting-edge solutions,{' '}<a href={`mailto:${email}`}>let's connect!</a>
+            What motivates me every day is the belief that software has the power to solve problems, simplify processes, and create new opportunities. I’m excited to continue growing in this field, always looking for ways to innovate and contribute to meaningful solutions. 
+            If you’re looking for someone with strong technical skills and a genuine drive to make an impact,{' '}<a href={`mailto:${email}`}>let's connect!</a>
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>

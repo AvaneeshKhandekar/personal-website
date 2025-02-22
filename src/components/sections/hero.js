@@ -66,9 +66,10 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a full stack software engineer with over three years of experience building cloud native solutions.
-        With a deep understanding of both front-end and back-end development, coupled with expertise in cloud technologies,
-        I bring a holistic approach to crafting scalable, resilient and efficient applications.
+      I'm a full-stack software engineer with over three years of experience developing software. 
+      I have a strong foundation in both front-end and back-end technologies, specializing in building scalable, reliable, and efficient systems. 
+      I’m proficient in cloud technologies, designing robust, scalable architectures that optimize performance and cost.
+      I also have experience and a solid understanding of AI and am eager to explore its potential to create intelligent, data-driven solutions.
       </p>
     </>
   );
