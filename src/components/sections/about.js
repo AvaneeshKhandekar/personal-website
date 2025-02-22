@@ -141,20 +141,16 @@ const About = () => {
               <p>For me, software is more than just code. It's the power to create, innovate, and solve problems.</p>
               <p>
               Recently, I had the opportunity to intern at{' '}<a href="https://www.citizensfla.com/">Citizens Property Insurance Corporation</a>, 
-              where I worked on creating a Q&A chatbot powered by AI. The chatbot, built using Retrieval Augmented Generation (RAG) and large language models (LLMs),
-              helped employees access and analyze financial and budget data in real time. It was exciting to see how applying AI to real-world problems made a tangible 
-              difference and strengthened my belief in the power of technology to drive change. This experience deepened my commitment to pushing the limits of what technology can achieve.
+              where I developed a Q&A chatbot powered by AI. Using Retrieval Augmented Generation (RAG) and large language models (LLMs), the chatbot allowed managers to ask complex questions in simple English that required real-time analysis 
+              and aggregation of financial and budget data. It was rewarding to see AI's real-world impact and how it reinforced my belief in technology's power to drive change.
               </p>
               <p>
               Prior to this, I spent 3 years at{' '}
               <a href="https://www.tcs.com/">Tata Consultancy Services</a>. I worked as a Full Stack Developer for {' '}<a href="https://investor.vanguard.com/corporate-portal">The Vanguard Group</a>. 
-              During my time at TCS, I earned my {' '}<a href="https://www.credly.com/badges/cfa8afa0-ee04-4491-9ed5-73b09b786cb9/public_url">AWS Developer Certification</a> and was deeply involved in cloud computing, creating RESTful microservices and Angular UI applications 
-              hosted on Cloud to replace legacy systems with high-performance solutions. I also led technical efforts as an interim technical lead, ensuring the timely delivery of project
-              milestones. One of my proudest achievements was building an event-driven text notification system using AWS Lambda, Message Queues, and Cloud Notifications, 
-              which reduced missed appointments by 80%. Additionally, I developed a custom PII data masking library, enhanced data security compliance, and implemented multi-region cloud 
-              contingency for disaster recovery. My passion for innovation and technology drove me to improve team proficiency through training and continuously explore ways to optimize workflows, 
-              ensuring that we delivered impactful and cutting-edge solutions.
-              
+              During my time at TCS, I earned my {' '}<a href="https://www.credly.com/badges/cfa8afa0-ee04-4491-9ed5-73b09b786cb9/public_url">AWS Developer Certification</a> and worked on 
+              creating RESTful microservices and Angular UI applications hosted on Cloud to replace legacy systems with high-performance solutions. 
+              I also built event-driven cloud applications like text notifications and data movement pipelines, and implemented multi-region cloud contingency for disaster recovery. 
+              I led technical efforts as an interim technical lead, ensuring timely delivery of project milestones and trained new hires on technology and processes to improve team efficiency.              
             </p>
             <p>
               In addition to my primary pursuits,
