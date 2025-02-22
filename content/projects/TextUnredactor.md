@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 5
 date: '2024-11-26'
 title: 'Text Unredactor'
 github: 'https://github.com/AvaneeshKhandekar/Text-Unredactor'
