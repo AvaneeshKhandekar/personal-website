@@ -148,14 +148,14 @@ const About = () => {
               Before this, I spent 3 years at{' '}
               <a href="https://www.tcs.com/">Tata Consultancy Services</a>. I worked as a Full Stack Developer for {' '}<a href="https://investor.vanguard.com/corporate-portal">The Vanguard Group</a>. 
               During my time at TCS, I earned my {' '}<a href="https://www.credly.com/badges/cfa8afa0-ee04-4491-9ed5-73b09b786cb9/public_url">AWS Developer Certification</a> and worked on 
-              creating REST microservices and Angular UI applications on cloud replacing legacy systems with high-performance solutions. 
+              creating REST microservices and Angular UI applications on cloud. 
               I also built event-driven cloud applications like text notifications and data movement pipelines, and implemented multi-region cloud contingency for disaster recovery. 
               I led technical efforts as an interim technical lead, ensuring timely delivery of project milestones and trained new hires on technology and processes to improve team efficiency.              
             </p>
             <p>
               In addition to my primary pursuits,
               I have a keen interest in machine learning and data science. I have invested time and effort into executing various projects in these domains 
-              including my capstone undergrad project at{' '}<a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies Private Limited</a>.
+              including my capstone undergrad project at{' '}<a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies</a>.
               There, I developed an application for defect detection in fuse box assemblies using object detection and neural networks.
             </p>
             <p>
