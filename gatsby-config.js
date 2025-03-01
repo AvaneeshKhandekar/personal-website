@@ -5,8 +5,8 @@ module.exports = {
     title: 'Avaneesh Khandekar',
     description:
       'Avaneesh Khandekar is a software engineer who specializes in building cloud solutions.',
-    siteUrl: 'https://avaneeshkhandekar.com', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+    siteUrl: 'https://avaneeshk.vercel.app', // No trailing slash allowed!
+    image: 'src/images/me.jpeg', // Path to your image you placed in the 'static' folder
     twitterUsername: '4v4neesh',
   },
   plugins: [
