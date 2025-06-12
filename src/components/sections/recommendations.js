@@ -21,6 +21,8 @@ const StyledRecommendationsSection = styled.section`
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 30px;
     margin-top: 50px;
+    justify-content: center;
+
   }
 
   .recommendation-card {
@@ -73,7 +75,7 @@ const StyledRecommendationsSection = styled.section`
 const RECOMMENDATION_PREVIEW_LENGTH = 250;
 
 const Recommendations = () => {
-  const data = useStaticQuery(graphql`
+    const data = useStaticQuery(graphql`
     query {
       recommendations: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/recommendations/" } }
@@ -92,65 +94,65 @@ const Recommendations = () => {
     }
   `);
 
-  const prefersReducedMotion = usePrefersReducedMotion();
-  const revealTitle = useRef(null);
-  const revealRefs = useRef([]);
-  const [expandedIndices, setExpandedIndices] = useState([]);
+    const prefersReducedMotion = usePrefersReducedMotion();
+    const revealTitle = useRef(null);
+    const revealRefs = useRef([]);
+    const [expandedIndices, setExpandedIndices] = useState([]);
 
-  useEffect(() => {
-    if (prefersReducedMotion) return;
-    sr.reveal(revealTitle.current, srConfig());
-    revealRefs.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
-  }, []);
+    useEffect(() => {
+        if (prefersReducedMotion) return;
+        sr.reveal(revealTitle.current, srConfig());
+        revealRefs.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+    }, []);
 
-  const toggleExpand = (index) => {
-    setExpandedIndices((prev) =>
-      prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+    const toggleExpand = (index) => {
+        setExpandedIndices((prev) =>
+            prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+        );
+    };
+
+    const recommendations = data.recommendations.edges.map(({ node }) => ({
+        name: node.frontmatter.name,
+        title: node.frontmatter.title,
+        text: node.rawMarkdownBody.trim(),
+    }));
+
+    return (
+        <StyledRecommendationsSection id="recommendations">
+            <h2 className="numbered-heading" ref={revealTitle}>
+                What People Say
+            </h2>
+
+            <div className="recommendation-grid">
+                <TransitionGroup component={null}>
+                    {recommendations.map((rec, i) => {
+                        const { name, title, text } = rec;
+                        const isExpanded = expandedIndices.includes(i);
+                        const preview = text.slice(0, RECOMMENDATION_PREVIEW_LENGTH);
+
+                        return (
+                            <CSSTransition key={i} classNames="fadeup" timeout={300} exit={false}>
+                                <div
+                                    className="recommendation-card"
+                                    ref={el => (revealRefs.current[i] = el)}>
+                                    <div className="quote">
+                                        {isExpanded ? text : preview + (text.length > RECOMMENDATION_PREVIEW_LENGTH ? '...' : '')}
+                                    </div>
+                                    {text.length > RECOMMENDATION_PREVIEW_LENGTH && (
+                                        <span className="expand-toggle" onClick={() => toggleExpand(i)}>
+                                            {isExpanded ? 'Show less' : 'Read more'}
+                                        </span>
+                                    )}
+                                    <div className="name">{name}</div>
+                                    <div className="title">{title}</div>
+                                </div>
+                            </CSSTransition>
+                        );
+                    })}
+                </TransitionGroup>
+            </div>
+        </StyledRecommendationsSection>
     );
-  };
-
-  const recommendations = data.recommendations.edges.map(({ node }) => ({
-    name: node.frontmatter.name,
-    title: node.frontmatter.title,
-    text: node.rawMarkdownBody.trim(),
-  }));
-
-  return (
-    <StyledRecommendationsSection id="recommendations">
-      <h2 className="numbered-heading" ref={revealTitle}>
-        What People Say
-      </h2>
-
-      <div className="recommendation-grid">
-        <TransitionGroup component={null}>
-          {recommendations.map((rec, i) => {
-            const { name, title, text } = rec;
-            const isExpanded = expandedIndices.includes(i);
-            const preview = text.slice(0, RECOMMENDATION_PREVIEW_LENGTH);
-
-            return (
-              <CSSTransition key={i} classNames="fadeup" timeout={300} exit={false}>
-                <div
-                  className="recommendation-card"
-                  ref={el => (revealRefs.current[i] = el)}>
-                  <div className="quote">
-                    {isExpanded ? text : preview + (text.length > RECOMMENDATION_PREVIEW_LENGTH ? '...' : '')}
-                  </div>
-                  {text.length > RECOMMENDATION_PREVIEW_LENGTH && (
-                    <span className="expand-toggle" onClick={() => toggleExpand(i)}>
-                      {isExpanded ? 'Show less' : 'Read more'}
-                    </span>
-                  )}
-                  <div className="name">{name}</div>
-                  <div className="title">{title}</div>
-                </div>
-              </CSSTransition>
-            );
-          })}
-        </TransitionGroup>
-      </div>
-    </StyledRecommendationsSection>
-  );
 };
 
 export default Recommendations;
