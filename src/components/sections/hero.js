@@ -96,8 +96,14 @@ const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
 
-  // State to track expanded recommendations by index
   const [expandedIndices, setExpandedIndices] = useState([]);
+
+  const toggleExpand = (index) => {
+    setExpandedIndices((prev) =>
+      prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+    );
+  };
+
 
   useEffect(() => {
     if (prefersReducedMotion) return;
@@ -166,6 +172,9 @@ const Hero = () => {
   const recommendationsBlock =
     recommendations.length > 0 ? (
       <div className="recommendations-container" aria-label="Recommendations">
+        <h4 style={{ marginBottom: '20px', color: 'var(--green)' }}>
+          What people say about me
+        </h4>
         {recommendations.map((rec, i) => renderRecommendation(rec, i))}
       </div>
     ) : null;
