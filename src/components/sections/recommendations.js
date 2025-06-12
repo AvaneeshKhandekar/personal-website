@@ -109,9 +109,23 @@ const Recommendations = () => {
     }, []);
 
     const toggleExpand = (index) => {
-        setExpandedIndices((prev) =>
-            prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
-        );
+        setExpandedIndices((prev) => {
+            const isCurrentlyExpanded = prev.includes(index);
+            let newExpanded;
+
+            if (isCurrentlyExpanded) {
+                newExpanded = prev.filter(i => i !== index);
+
+                const el = revealRefs.current[index];
+                if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            } else {
+                newExpanded = [...prev, index];
+            }
+
+            return newExpanded;
+        });
     };
 
     const recommendations = data.recommendations.edges.map(({ node }) => ({
