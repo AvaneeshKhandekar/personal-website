@@ -74,7 +74,7 @@ const RECOMMENDATION_PREVIEW_LENGTH = 150;
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
-    query {
+        query {
       recommendations: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/recommendations/" } }
         sort: { fields: [frontmatter___order], order: ASC }
@@ -83,7 +83,8 @@ const Hero = () => {
         edges {
           node {
             frontmatter {
-              author
+              name
+              title
             }
             rawMarkdownBody
           }
@@ -105,20 +106,19 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const recommendations = data.recommendations.edges.map(({ node }) => node.rawMarkdownBody.trim());
+  const recommendations = data.recommendations.edges.map(({ node }) => ({
+    name: node.frontmatter.name,
+    title: node.frontmatter.title,
+    text: node.rawMarkdownBody.trim(),
+  }));
 
-  const toggleExpand = index => {
-    setExpandedIndices(prev =>
-      prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
-    );
-  };
-
-  const renderRecommendation = (text, index) => {
+  const renderRecommendation = ({ name, title, text }, index) => {
     const isExpanded = expandedIndices.includes(index);
     const preview = text.slice(0, RECOMMENDATION_PREVIEW_LENGTH);
 
     return (
       <div key={index}>
+        <strong>{name}</strong>{title && `, ${title}`}
         <p className="recommendation-text">
           {isExpanded ? text : preview + (text.length > RECOMMENDATION_PREVIEW_LENGTH ? '...' : '')}
         </p>
@@ -130,6 +130,7 @@ const Hero = () => {
       </div>
     );
   };
+
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Avaneesh Khandekar</h2>;
