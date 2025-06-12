@@ -35,12 +35,15 @@ const StyledRecommendationsSection = styled.section`
     color: var(--light-slate);
     font-size: var(--fz-md);
     position: relative;
-    transition: var(--transition);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     @media (prefers-reduced-motion: no-preference) {
         &:hover,
         &:focus-within {
         transform: translateY(-7px);
+        /* optionally change shadow if projects have different on hover */
+        box-shadow: var(--box-shadow);
         }
     }
     }
@@ -61,7 +64,7 @@ const StyledRecommendationsSection = styled.section`
     }
 
     .title {
-      font-size: var(--fz-xl);
+      font-size: var(--fz-lg);
       color: var(--slate);
       margin-bottom: 10px;
     }
