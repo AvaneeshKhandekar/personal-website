@@ -7,25 +7,30 @@ import { srConfig } from '@config';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledRecommendationsSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 100px 0;
+    max-width: 700px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-  h2 {
-    font-size: clamp(24px, 5vw, var(--fz-heading));
-  }
+    h2 {
+        font-size: clamp(24px, 5vw, var(--fz-heading));
+    }
 
-  .recommendation-grid {
+    .recommendation-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
     margin-top: 50px;
     justify-content: center;
-
-  }
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
   .recommendation-card {
+    text-align: center;
     background: var(--light-navy);
     border-radius: var(--border-radius);
     padding: 1.75rem;
@@ -40,6 +45,7 @@ const StyledRecommendationsSection = styled.section`
     }
 
     .quote {
+      text-align: center;
       font-style: italic;
       margin-bottom: 1rem;
       color: var(--slate);
