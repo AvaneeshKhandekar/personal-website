@@ -126,7 +126,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'Java', 'Go', 'Node.js', 'Angular', 'React', 'Express', 'AWS', 'Azure', 'SQL', 'NoSQL'];
+  const skills = ['Python', 'Java', 'Go', 'Node.js', 'Angular', 'React', 'Express', 'AWS', 'Azure', 'GCP', 'SQL', 'NoSQL'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -140,6 +140,9 @@ const About = () => {
             </p>
             <p>
               For me, software is more than just code. It's the power to create, innovate, and solve problems.
+            </p>
+            <p>
+              I hold a Master's degree in Computer Science from the <a href="https://www.cise.ufl.edu/" target="_blank" rel="noreferrer">University of Florida's CISE department</a>.
             </p>
             <p>
               Recently, I have been contributing to <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a>,
@@ -158,24 +161,21 @@ const About = () => {
             <p>
               Before that, I spent 3 years at <a href="https://www.tcs.com/" target="_blank" rel="noreferrer">Tata Consultancy Services</a>, working as a Full Stack Developer
               for <a href="https://investor.vanguard.com/corporate-portal" target="_blank" rel="noreferrer">The Vanguard Group</a>.
-              I contributed to cloud-based microservices, serverless event-driven applications, Angular UI development, and disaster recovery solutions.
-              I also led technical efforts as an interim technical lead and trained new hires to improve team performance.
+              I built cloud microservices, serverless apps, Angular UI, and disaster recovery systems, and led as interim tech lead while training new hires.
               During this time, I earned my <a href="https://www.credly.com/badges/cfa8afa0-ee04-4491-9ed5-73b09b786cb9/public_url" target="_blank" rel="noreferrer">AWS Developer Certification</a>.
             </p>
-            <p>
-              In addition to my primary pursuits, I have a keen interest in machine learning and data science. I have invested time and effort into executing
-              various projects in these domains including my capstone undergrad project at <a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies</a>.
-              There, I developed an application for defect detection in fuse box assemblies using object detection and neural networks.
-            </p>
+            <p> I’m also passionate about machine learning and data science, with hands-on project experiences including my undergrad capstone at <a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies</a>,
+              where I built a neural network application for defect detection in fuse box assemblies. </p>
             <p>
               Outside of technology, I enjoy biking, am a huge Star Wars fan, and actively follow sports, especially football and Formula One racing.
             </p>
             <p>
-              What motivates me every day is the belief that software has the power to solve problems, simplify processes, and create new opportunities. 
-              I’m excited to continue growing in this field, always looking for ways to innovate and contribute to meaningful solutions. 
+              What motivates me every day is the belief that software has the power to solve problems, simplify processes, and create new opportunities.
+              I’m excited to continue growing in this field, always looking for ways to innovate and contribute to meaningful solutions.
               If you’re looking for someone with strong technical skills and a genuine drive to make an impact, <a href={`mailto:${email}`}>let's connect!</a>
             </p>
           </div>
+
 
 
 

@@ -65,12 +65,14 @@ const Hero = () => {
   const three = <h3 className="big-heading">SWE at{' '} <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer"><u>Kaseya</u></a></h3>;
   const four = (
     <>
-  <p>
-    I'm a full-stack software engineer with over three years of experience developing scalable, reliable, and efficient software systems. 
-    I specialize in cloud-native and serverless, event-driven architectures, with strong skills in both front-end and back-end technologies. 
-    Currently, I contribute to SaaS Alerts, a security platform under Kaseya that delivers real-time threat detection and automated remediation for MSPs. 
-    Additionally, I have a solid understanding of AI and machine learning, and I’m passionate about exploring their potential to solve real-world problems.
-  </p>
+      const four = (
+      <p>
+        I'm a full-stack engineer with 3+ years building scalable, cloud-native, serverless applications.
+        I contribute to <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a> at <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">Kaseya</a>,
+        enhancing real-time threat detection for MSPs. I also have a strong interest in AI and machine learning to solve real-world problems.
+      </p>
+      );
+
     </>
   );
   const five = (
