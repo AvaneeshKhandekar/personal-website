@@ -19,7 +19,7 @@ const StyledRecommendationsSection = styled.section`
 
     .recommendation-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 30px;
     margin-top: 50px;
     justify-content: center;
@@ -44,20 +44,20 @@ const StyledRecommendationsSection = styled.section`
     .quote {
       font-style: italic;
       margin-bottom: 1rem;
-      color: var(--slate);
-      font-size: 16px;
+      color: var(--light-slate);
+      font-size: 17px;
       line-height: 1.6;
       white-space: pre-line;
     }
 
     .name {
-      font-weight: 600;
+      font-size: var(--fz-xxl);
       color: var(--lightest-slate);
       margin-bottom: 4px;
     }
 
     .title {
-      font-size: var(--fz-sm);
+      font-size: var(--fz-xl);
       color: var(--slate);
       margin-bottom: 10px;
     }
