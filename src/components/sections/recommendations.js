@@ -27,7 +27,7 @@ const StyledRecommendationsSection = styled.section`
     margin-right: auto;
     }
 
-  .recommendation-card {
+    .recommendation-card {
     background: var(--light-navy);
     border-radius: var(--border-radius);
     padding: 1.75rem;
@@ -37,8 +37,12 @@ const StyledRecommendationsSection = styled.section`
     position: relative;
     transition: var(--transition);
 
-    &:hover {
-      transform: translateY(-5px);
+    @media (prefers-reduced-motion: no-preference) {
+        &:hover,
+        &:focus-within {
+        transform: translateY(-7px);
+        }
+    }
     }
 
     .quote {
