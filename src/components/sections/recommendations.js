@@ -24,13 +24,11 @@ const StyledRecommendationsSection = styled.section`
     gap: 30px;
     margin-top: 50px;
     justify-content: center;
-    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     }
 
   .recommendation-card {
-    text-align: center;
     background: var(--light-navy);
     border-radius: var(--border-radius);
     padding: 1.75rem;
@@ -45,7 +43,6 @@ const StyledRecommendationsSection = styled.section`
     }
 
     .quote {
-      text-align: center;
       font-style: italic;
       margin-bottom: 1rem;
       color: var(--slate);
