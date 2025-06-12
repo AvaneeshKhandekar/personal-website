@@ -11,7 +11,9 @@ const StyledHeroSection = styled.section`
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
+  padding-top: var(--nav-height);
   padding: 0;
+  scroll-margin-top: var(--nav-height);
 
   @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
     height: auto;
