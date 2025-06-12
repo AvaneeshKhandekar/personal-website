@@ -70,7 +70,7 @@ const StyledRecommendationsSection = styled.section`
   }
 `;
 
-const RECOMMENDATION_PREVIEW_LENGTH = 150;
+const RECOMMENDATION_PREVIEW_LENGTH = 250;
 
 const Recommendations = () => {
   const data = useStaticQuery(graphql`
