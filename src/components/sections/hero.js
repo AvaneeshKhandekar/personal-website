@@ -46,27 +46,52 @@ const StyledHeroSection = styled.section`
     margin-top: 50px;
   }
 
-  .recommendations-container {
-    margin-top: 40px;
-    max-width: 540px;
-  }
+ .recommendations-container {
+  margin-top: 40px;
+  max-width: 540px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: var(--border-radius);
+}
 
-  .recommendation-text {
-    color: var(--slate);
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    white-space: pre-line;
-  }
+.recommendation {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--lightest-navy);
+}
 
-  .expand-toggle {
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: var(--fz-xs);
-    cursor: pointer;
-    user-select: none;
-    margin-bottom: 20px;
-  }
+.recommendation:last-child {
+  border-bottom: none;
+}
+
+.recommendation-name {
+  font-weight: 600;
+  color: var(--lightest-slate);
+  margin-bottom: 4px;
+}
+
+.recommendation-title {
+  color: var(--slate);
+  font-size: var(--fz-sm);
+  margin-bottom: 10px;
+}
+
+.recommendation-text {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  white-space: pre-line;
+}
+
+.expand-toggle {
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  margin-top: 4px;
+}
 `;
 
 const RECOMMENDATION_PREVIEW_LENGTH = 150;
@@ -122,8 +147,11 @@ const Hero = () => {
     const preview = text.slice(0, RECOMMENDATION_PREVIEW_LENGTH);
 
     return (
-      <div key={index}>
-        <strong>{name}</strong>{title && `, ${title}`}
+      <div key={index} className="recommendation">
+        <div className="recommendation-name">
+          <strong>{name}</strong>
+        </div>
+        {title && <div className="recommendation-title">{title}</div>}
         <p className="recommendation-text">
           {isExpanded ? text : preview + (text.length > RECOMMENDATION_PREVIEW_LENGTH ? '...' : '')}
         </p>
