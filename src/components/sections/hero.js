@@ -67,7 +67,7 @@ const Hero = () => {
     <>
       <p>
         I'm a full-stack engineer with 3+ years building scalable, cloud-native, serverless applications.
-        I contribute to <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a> at <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">Kaseya</a>,
+        I help build <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a> at <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">Kaseya</a>,
         enhancing real-time threat detection for MSPs. I also have a strong interest in AI and machine learning to solve real-world problems.
       </p>
     </>

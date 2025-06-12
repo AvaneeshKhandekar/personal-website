@@ -145,7 +145,7 @@ const About = () => {
               I hold a Master's degree in Computer Science from the <a href="https://www.cise.ufl.edu/" target="_blank" rel="noreferrer">University of Florida's CISE department</a>.
             </p>
             <p>
-              Recently, I have been contributing to <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a>,
+              I’m part of the engineering team behind <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a>,
               a security platform under <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">Kaseya</a> designed for MSPs that delivers real-time detection
               and automated remediation of suspicious activities across SaaS applications and devices. This helps protect client environments from potential threats and enhances
               overall security management.
