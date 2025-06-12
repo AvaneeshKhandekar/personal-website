@@ -19,7 +19,7 @@ const StyledRecommendationsSection = styled.section`
 
     .recommendation-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 30px;
     margin-top: 50px;
     justify-content: center;
@@ -61,17 +61,14 @@ const StyledRecommendationsSection = styled.section`
       color: var(--slate);
       margin-bottom: 10px;
     }
-
+    
     .expand-toggle {
       color: var(--green);
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
       cursor: pointer;
       user-select: none;
-      display: inline-block;
-      margin-top: 4px;
-      margin-right: 8px;
-      margin-bottom: 0;
+      margin-left: 6px; /* small space before "Read more" */
     }
   }
 `;
@@ -153,12 +150,14 @@ const Recommendations = () => {
                                     className="recommendation-card"
                                     ref={el => (revealRefs.current[i] = el)}>
                                     <div className="quote">
+                                        <span>
+                                            {isExpanded ? text : preview + (text.length > RECOMMENDATION_PREVIEW_LENGTH ? '...' : '')}
+                                        </span>
                                         {text.length > RECOMMENDATION_PREVIEW_LENGTH && (
                                             <span className="expand-toggle" onClick={() => toggleExpand(i)}>
                                                 {isExpanded ? 'Show less' : 'Read more'}
                                             </span>
                                         )}
-                                        {isExpanded ? text : preview + (text.length > RECOMMENDATION_PREVIEW_LENGTH ? '...' : '')}
                                     </div>
                                     <div className="name">{name}</div>
                                     <div className="title">{title}</div>
