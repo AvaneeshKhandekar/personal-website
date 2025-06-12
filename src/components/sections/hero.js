@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
@@ -45,44 +46,130 @@ const StyledHeroSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
+
+  .recommendations-container {
+    margin-top: 40px;
+    max-width: 540px;
+  }
+
+  .recommendation-text {
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    white-space: pre-line;
+  }
+
+  .expand-toggle {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 20px;
+  }
 `;
 
+const RECOMMENDATION_PREVIEW_LENGTH = 150;
+
 const Hero = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      recommendations: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/content/recommendations/" } }
+        sort: { fields: [frontmatter___order], order: ASC }
+        limit: 3
+      ) {
+        edges {
+          node {
+            frontmatter {
+              author
+            }
+            rawMarkdownBody
+          }
+        }
+      }
+    }
+  `);
+
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
 
+  // State to track expanded recommendations by index
+  const [expandedIndices, setExpandedIndices] = useState([]);
+
   useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
+    if (prefersReducedMotion) return;
 
     const timeout = setTimeout(() => setIsMounted(true), navDelay);
     return () => clearTimeout(timeout);
   }, []);
 
+  const recommendations = data.recommendations.edges.map(({ node }) => node.rawMarkdownBody.trim());
+
+  const toggleExpand = index => {
+    setExpandedIndices(prev =>
+      prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+    );
+  };
+
+  const renderRecommendation = (text, index) => {
+    const isExpanded = expandedIndices.includes(index);
+    const preview = text.slice(0, RECOMMENDATION_PREVIEW_LENGTH);
+
+    return (
+      <div key={index}>
+        <p className="recommendation-text">
+          {isExpanded ? text : preview + (text.length > RECOMMENDATION_PREVIEW_LENGTH ? '...' : '')}
+        </p>
+        {text.length > RECOMMENDATION_PREVIEW_LENGTH && (
+          <span className="expand-toggle" onClick={() => toggleExpand(index)}>
+            {isExpanded ? 'Show less' : 'Read more'}
+          </span>
+        )}
+      </div>
+    );
+  };
+
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Avaneesh Khandekar</h2>;
-  const three = <h3 className="big-heading">SWE at{' '} <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer"><u>Kaseya</u></a></h3>;
+  const three = (
+    <h3 className="big-heading">
+      SWE at{' '}
+      <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">
+        <u>Kaseya</u>
+      </a>
+    </h3>
+  );
   const four = (
     <>
       <p>
-        I'm a full-stack engineer with 3+ years building scalable, cloud-native, serverless applications.
-        I help build <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a> at <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">Kaseya</a>,
-        enhancing real-time threat detection for MSPs. I also have a strong interest in applying AI and machine learning to solve real-world problems.
+        I'm a full-stack engineer with 3+ years building scalable, cloud-native, serverless applications. I help build{' '}
+        <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">
+          SaaS Alerts
+        </a>{' '}
+        at{' '}
+        <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">
+          Kaseya
+        </a>
+        , enhancing real-time threat detection for MSPs. I also have a strong interest in applying AI and machine learning to solve real-world problems.
       </p>
     </>
   );
   const five = (
-    <a
-      className="email-link"
-      href={`mailto:${email}`}
-      target="_blank"
-      rel="noreferrer">
+    <a className="email-link" href={`mailto:${email}`} target="_blank" rel="noreferrer">
       Get in touch!
     </a>
   );
 
-  const items = [one, two, three, four, five];
+  const recommendationsBlock =
+    recommendations.length > 0 ? (
+      <div className="recommendations-container" aria-label="Recommendations">
+        {recommendations.map((rec, i) => renderRecommendation(rec, i))}
+      </div>
+    ) : null;
+
+  const items = [one, two, three, four, five, recommendationsBlock];
 
   return (
     <StyledHeroSection>
