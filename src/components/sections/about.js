@@ -126,7 +126,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'Java', 'Go', 'Node.js', 'Angular', 'React', 'AWS', 'Azure', 'SQL', 'NoSQL'];
+  const skills = ['Python', 'Java', 'Go', 'Node.js', 'Angular', 'React', 'Express', 'AWS', 'Azure', 'GCP', 'SQL', 'NoSQL'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -137,37 +137,47 @@ const About = () => {
           <div>
             <p>
               Hello there! My name is Avaneesh and I am a software developer with a passion for technology and data.
-              </p>
-              <p>For me, software is more than just code. It's the power to create, innovate, and solve problems.</p>
-              <p>
-              Recently, I had the opportunity to intern at{' '}<a href="https://www.citizensfla.com/">Citizens Property Insurance Corporation</a>, 
-              where I developed a Q&A chatbot powered by AI. Using Retrieval Augmented Generation (RAG) and large language models (LLMs), the chatbot allowed managers to ask complex questions in simple English that required real-time analysis 
-              and aggregation of financial and budget data. It was rewarding to see the real-world impact of AI and its potential to drive change.
-              </p>
-              <p>
-              Before this, I spent 3 years at{' '}
-              <a href="https://www.tcs.com/">Tata Consultancy Services</a>. I worked as a Full Stack Developer for {' '}<a href="https://investor.vanguard.com/corporate-portal">The Vanguard Group</a>. 
-              During my time at TCS, I earned my {' '}<a href="https://www.credly.com/badges/cfa8afa0-ee04-4491-9ed5-73b09b786cb9/public_url">AWS Developer Certification</a> and worked on 
-              creating REST microservices and Angular UI applications on cloud. 
-              I also built event-driven cloud applications like text notifications and data movement pipelines, and implemented multi-region cloud contingency for disaster recovery. 
-              I led technical efforts as an interim technical lead, ensuring timely delivery of project milestones and trained new hires on technology and processes to improve team efficiency.              
             </p>
             <p>
-              In addition to my primary pursuits,
-              I have a keen interest in machine learning and data science. I have invested time and effort into executing various projects in these domains 
-              including my capstone undergrad project at{' '}<a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies</a>.
-              There, I developed an application for defect detection in fuse box assemblies using object detection and neural networks.
+              For me, software is more than just code. It's the power to create, innovate, and solve problems.
             </p>
             <p>
-              Outside of technology, I enjoy biking, am a huge Star Wars fan, and actively follow sports, especially football and Formula One racing..              
+              I hold a Master's degree in Computer Science from the <a href="https://www.cise.ufl.edu/" target="_blank" rel="noreferrer">University of Florida's CISE department</a>.
             </p>
             <p>
-            What motivates me every day is the belief that software has the power to solve problems, simplify processes, and create new opportunities. I’m excited to continue growing in this field, always looking for ways to innovate and contribute to meaningful solutions. 
-            If you’re looking for someone with strong technical skills and a genuine drive to make an impact,{' '}<a href={`mailto:${email}`}>let's connect!</a>
+              I’m part of the engineering team behind <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a>,
+              a security platform under <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">Kaseya</a> designed for MSPs that delivers real-time detection
+              and automated remediation of suspicious activities across SaaS applications and devices. This helps protect client environments from potential threats and enhances
+              overall security management.
             </p>
-
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>
+              At <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a>, I focus on developing features that improve threat detection accuracy and automate response workflows.
+              This includes enhancing API integrations, building scalable microservices, and optimizing frontend components for better user experience.
+            </p>
+            <p>
+              Previously, I interned at <a href="https://www.citizensfla.com/" target="_blank" rel="noreferrer">Citizens Property Insurance Corporation</a>,
+              where I developed an AI-powered RAG Q&A chatbot enabling managers to query financial data in natural language.
+            </p>
+            <p>
+              Before that, I spent 3 years at <a href="https://www.tcs.com/" target="_blank" rel="noreferrer">Tata Consultancy Services</a>, working as a Full Stack Developer
+              for <a href="https://investor.vanguard.com/corporate-portal" target="_blank" rel="noreferrer">The Vanguard Group</a>.
+              I built cloud microservices, serverless apps, Angular UI, and disaster recovery systems, and led as interim tech lead while training new hires.
+              During this time, I earned my <a href="https://www.credly.com/badges/cfa8afa0-ee04-4491-9ed5-73b09b786cb9/public_url" target="_blank" rel="noreferrer">AWS Developer Certification</a>.
+            </p>
+            <p> I’m also passionate about machine learning and data science, with hands-on project experiences including my undergrad capstone at <a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies</a>,
+              where I built a neural network application for defect detection in fuse box assemblies. </p>
+            <p>
+              Outside of technology, I enjoy biking, am a huge Star Wars fan, and actively follow sports, especially football and Formula One racing.
+            </p>
+            <p>
+              What motivates me every day is the belief that software has the power to solve problems, simplify processes, and create new opportunities.
+              I’m excited to continue growing in this field, always looking for ways to innovate and contribute to meaningful solutions.
+              If you’re looking for someone with strong technical skills and a genuine drive to make an impact, <a href={`mailto:${email}`}>let's connect!</a>
+            </p>
           </div>
+
+
+
 
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}

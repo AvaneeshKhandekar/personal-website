@@ -62,14 +62,13 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Avaneesh Khandekar</h2>;
-  const three = <h3 className="big-heading">MS CS at{' '} <a href="https://www.cise.ufl.edu/" target="_blank" rel="noreferrer"><u>University of Florida</u></a></h3>;
+  const three = <h3 className="big-heading">SWE at{' '} <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer"><u>Kaseya</u></a></h3>;
   const four = (
     <>
       <p>
-      I'm a full-stack software engineer with over three years of experience developing software. 
-      I have a strong foundation in both front-end and back-end technologies, specializing in building scalable, reliable, and efficient systems. 
-      I’m proficient in cloud technologies, designing solutions that optimize performance and cost.
-      I also have experience and a solid understanding of AI and am eager to explore its potential to create intelligent, data-driven solutions.
+        I'm a full-stack engineer with 3+ years building scalable, cloud-native, serverless applications.
+        I help build <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a> at <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">Kaseya</a>,
+        enhancing real-time threat detection for MSPs. I also have a strong interest in applying AI and machine learning to solve real-world problems.
       </p>
     </>
   );
