@@ -70,6 +70,8 @@ const StyledRecommendationsSection = styled.section`
       user-select: none;
       display: inline-block;
       margin-top: 4px;
+      margin-right: 8px;
+      margin-bottom: 0;
     }
   }
 `;
@@ -151,13 +153,13 @@ const Recommendations = () => {
                                     className="recommendation-card"
                                     ref={el => (revealRefs.current[i] = el)}>
                                     <div className="quote">
+                                        {text.length > RECOMMENDATION_PREVIEW_LENGTH && (
+                                            <span className="expand-toggle" onClick={() => toggleExpand(i)}>
+                                                {isExpanded ? 'Show less' : 'Read more'}
+                                            </span>
+                                        )}
                                         {isExpanded ? text : preview + (text.length > RECOMMENDATION_PREVIEW_LENGTH ? '...' : '')}
                                     </div>
-                                    {text.length > RECOMMENDATION_PREVIEW_LENGTH && (
-                                        <span className="expand-toggle" onClick={() => toggleExpand(i)}>
-                                            {isExpanded ? 'Show less' : 'Read more'}
-                                        </span>
-                                    )}
                                     <div className="name">{name}</div>
                                     <div className="title">{title}</div>
                                 </div>
@@ -170,4 +172,4 @@ const Recommendations = () => {
     );
 };
 
-export default Recommendations;
+export default Recommendations; 
