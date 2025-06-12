@@ -7,6 +7,5 @@ range: 'June 2024 - August 2024'
 url: 'https://www.citizensfla.com/'
 ---
 
-- Designed and implemented a custom Retrieval Augmented Generation (RAG) Q&A chatbot using Langchain to deliver insights on financial and budget data, allowing real time analysis
-- Gathered and Preprocessed raw data and converted it into SQL tables for efficient retrieval and improved query performance
-- Developed a user-friendly Streamlit UI and deployed on Azure, enhancing accessibility and usability
+- Developed a RAG-based conversational AI chatbot using LangChain and the OpenAI GPT API, delivering real-time financial and budget insights with 95% accuracy
+- Automated cleaning and transformation of raw financial data to SQL, reducing processing time by 50%, and designed a Streamlit UI hosted on Azure to improve accessibility
