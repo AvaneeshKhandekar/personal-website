@@ -142,7 +142,7 @@ const About = () => {
               For me, software is more than just code. It's the power to create, innovate, and solve problems.
             </p>
             <p>
-              I hold a Master's degree in Computer Science from the <a href="https://www.cise.ufl.edu/" target="_blank" rel="noreferrer">University of Florida's CISE department</a>.
+              I hold a Master's degree in Computer Science from the <a href="https://www.cise.ufl.edu/" target="_blank" rel="noreferrer">University of Florida</a>.
             </p>
             <p>
               I’m part of the engineering team behind <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a>,
