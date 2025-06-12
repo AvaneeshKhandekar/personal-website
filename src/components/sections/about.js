@@ -144,7 +144,7 @@ const About = () => {
             <p>
               Recently, I have been contributing to <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a>,
               a security platform under <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">Kaseya</a> designed for MSPs that delivers real-time detection
-              and automated remediation of suspicious activities across SaaS applications. This helps protect client environments from potential threats and enhances
+              and automated remediation of suspicious activities across SaaS applications and devices. This helps protect client environments from potential threats and enhances
               overall security management.
             </p>
             <p>
@@ -164,8 +164,7 @@ const About = () => {
             </p>
             <p>
               In addition to my primary pursuits, I have a keen interest in machine learning and data science. I have invested time and effort into executing
-              various projects in these domains including my capstone undergrad project at
-              <a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies</a>.
+              various projects in these domains including my capstone undergrad project at <a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies</a>.
               There, I developed an application for defect detection in fuse box assemblies using object detection and neural networks.
             </p>
             <p>
