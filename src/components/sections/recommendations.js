@@ -12,7 +12,6 @@ const StyledRecommendationsSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 
     h2 {
         font-size: clamp(24px, 5vw, var(--fz-heading));
@@ -20,7 +19,7 @@ const StyledRecommendationsSection = styled.section`
 
     .recommendation-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 50px;
     justify-content: center;
