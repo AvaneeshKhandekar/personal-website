@@ -116,19 +116,22 @@ const Recommendations = () => {
     const toggleExpand = (index) => {
         setExpandedIndices((prev) => {
             const isCurrentlyExpanded = prev.includes(index);
-            let newExpanded;
 
             if (isCurrentlyExpanded) {
-                newExpanded = prev.filter(i => i !== index);
-
-                if (revealTitle.current) {
-                    revealTitle.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                if (revealRefs.current[index]) {
+                    revealRefs.current[index].scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
                 }
-            } else {
-                newExpanded = [...prev, index];
-            }
 
-            return newExpanded;
+                setTimeout(() => {
+                    setExpandedIndices((current) => current.filter(i => i !== index));
+                }, 300);
+                return prev;
+            } else {
+                return [...prev, index];
+            }
         });
     };
 
