@@ -242,7 +242,7 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-              {title}
+            {title}
           </h3>
 
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
