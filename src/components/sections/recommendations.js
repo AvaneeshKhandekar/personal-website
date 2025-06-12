@@ -19,7 +19,7 @@ const StyledRecommendationsSection = styled.section`
 
     .recommendation-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
     margin-top: 50px;
     justify-content: center;
