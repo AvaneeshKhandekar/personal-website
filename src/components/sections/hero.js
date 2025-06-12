@@ -65,14 +65,11 @@ const Hero = () => {
   const three = <h3 className="big-heading">SWE at{' '} <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer"><u>Kaseya</u></a></h3>;
   const four = (
     <>
-      const four = (
       <p>
         I'm a full-stack engineer with 3+ years building scalable, cloud-native, serverless applications.
         I contribute to <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a> at <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">Kaseya</a>,
         enhancing real-time threat detection for MSPs. I also have a strong interest in AI and machine learning to solve real-world problems.
       </p>
-      );
-
     </>
   );
   const five = (

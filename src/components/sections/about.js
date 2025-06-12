@@ -151,7 +151,7 @@ const About = () => {
               overall security management.
             </p>
             <p>
-              At SaaS Alerts, I focus on developing features that improve threat detection accuracy and automate response workflows.
+              At <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a>, I focus on developing features that improve threat detection accuracy and automate response workflows.
               This includes enhancing API integrations, building scalable microservices, and optimizing frontend components for better user experience.
             </p>
             <p>
