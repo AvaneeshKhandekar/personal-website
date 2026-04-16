@@ -1,6 +1,6 @@
 ---
 date: '2024-08-16'
-title: 'Information Technology Intern'
+title: 'Software Engineer Intern'
 company: 'Citizens Property Insurance Corporation'
 location: 'Jacksonville, FL'
 range: 'June 2024 - August 2024'
