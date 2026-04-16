@@ -1,7 +1,7 @@
 ---
 date: '2023-06-29'
 title: 'Systems Engineer'
-company: 'Tata Consultancy Services'
+company: 'Tata Consultancy Services (Vanguard)'
 location: 'Pune, India'
 range: 'August 2020 - June 2023'
 url: 'https://www.tcs.com/'
