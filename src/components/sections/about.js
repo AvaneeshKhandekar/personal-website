@@ -126,17 +126,15 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'Java', 'Go', 'Node.js', 'Angular', 'React', 'Express', 'AWS', 'Azure', 'GCP', 'SQL', 'NoSQL'];
-
+  const skills = ['Python', 'TypeScript', 'Java', 'Go', 'Node.js', 'React', 'Next.js', 'Angular', 'Express', 'AWS', 'GCP', 'Azure', 'SQL', 'NoSQL'];
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
       <h2 className="numbered-heading">About Me</h2>
-
       <div className="inner">
         <StyledText>
           <div>
             <p>
-              Hello there! My name is Avaneesh and I am a software developer with a passion for technology and data.
+              Hello there! My name is Avaneesh and I'm a software engineer with a passion for building secure, high-performance systems.
             </p>
             <p>
               For me, software is more than just code. It's the power to create, innovate, and solve problems.
@@ -145,40 +143,35 @@ const About = () => {
               I hold a Master's degree in Computer Science from the <a href="https://www.cise.ufl.edu/" target="_blank" rel="noreferrer">University of Florida</a>.
             </p>
             <p>
-              I’m part of the engineering team behind <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a>,
-              a security platform under <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">Kaseya</a> designed for MSPs that delivers real-time detection
-              and automated remediation of suspicious activities across SaaS applications and devices. This helps protect client environments from potential threats and enhances
-              overall security management.
+              I'm part of the engineering team behind <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a> at <a href="https://www.kaseya.com/" target="_blank" rel="noreferrer">Kaseya</a>,
+              a security platform for MSPs that delivers real-time detection and automated remediation of suspicious activities across Microsoft 365, Google Workspace, and 60+ other SaaS applications and devices.
+              Our team also builds KSIEM, Kaseya's flagship SIEM product that unifies SaaS Alerts with RocketCyber telemetry.
             </p>
             <p>
-              At <a href="https://saasalerts.com/" target="_blank" rel="noreferrer">SaaS Alerts</a>, I focus on developing features that improve threat detection accuracy and automate response workflows.
-              This includes enhancing API integrations, building scalable microservices, and optimizing frontend components for better user experience.
+              On the engineering side, I build the core of our SIEM platform — access control systems, real-time event processing pipelines, and React-based data interfaces that help thousands of MSP partners triage and respond to security events at scale.
             </p>
             <p>
               Previously, I interned at <a href="https://www.citizensfla.com/" target="_blank" rel="noreferrer">Citizens Property Insurance Corporation</a>,
-              where I developed an AI-powered RAG Q&A chatbot enabling managers to query financial data in natural language.
+              where I built a RAG-based conversational AI chatbot that lets managers query financial data in natural language.
             </p>
             <p>
-              Before that, I spent 3 years at <a href="https://www.tcs.com/" target="_blank" rel="noreferrer">Tata Consultancy Services</a>, working as a Full Stack Developer
-              for <a href="https://investor.vanguard.com/corporate-portal" target="_blank" rel="noreferrer">The Vanguard Group</a>.
-              I built cloud microservices, serverless apps, Angular UI, and disaster recovery systems, and led as interim tech lead while training new hires.
-              During this time, I earned my <a href="https://www.credly.com/badges/cfa8afa0-ee04-4491-9ed5-73b09b786cb9/public_url" target="_blank" rel="noreferrer">AWS Developer Certification</a>.
+              Before that, I spent nearly 3 years at <a href="https://www.tcs.com/" target="_blank" rel="noreferrer">Tata Consultancy Services</a> as a Full Stack Systems Engineer
+              consulting for <a href="https://investor.vanguard.com/corporate-portal" target="_blank" rel="noreferrer">The Vanguard Group</a>.
+              I architected event-driven AWS notification systems, migrated legacy monoliths to Spring Boot microservices, built responsive Angular applications, and implemented multi-region disaster recovery.
+              During this time I earned my <a href="https://www.credly.com/badges/cfa8afa0-ee04-4491-9ed5-73b09b786cb9/public_url" target="_blank" rel="noreferrer">AWS Developer Certification</a>.
             </p>
-            <p> I’m also passionate about machine learning and data science, with hands-on project experiences including my undergrad capstone at <a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies</a>,
-              where I built a neural network application for defect detection in fuse box assemblies. </p>
+            <p>
+              I'm also passionate about machine learning and computer vision. My final-year engineering project at <a href="https://www.symphonytech.com/" target="_blank" rel="noreferrer">Symphony Technologies</a> involved building a neural network system using TensorFlow and Faster R-CNN for defect detection in fuse box assemblies.
+            </p>
             <p>
               Outside of technology, I enjoy biking, am a huge Star Wars fan, and actively follow sports, especially football and Formula One racing.
             </p>
             <p>
               What motivates me every day is the belief that software has the power to solve problems, simplify processes, and create new opportunities.
-              I’m excited to continue growing in this field, always looking for ways to innovate and contribute to meaningful solutions.
-              If you’re looking for someone with strong technical skills and a genuine drive to make an impact, <a href={`mailto:${email}`}>let's connect!</a>
+              I'm excited to continue growing in this field, always looking for ways to innovate and contribute to meaningful solutions.
+              If you're looking for someone with strong technical skills and a genuine drive to make an impact, <a href={`mailto:${email}`}>let's connect!</a>
             </p>
           </div>
-
-
-
-
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
