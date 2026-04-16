@@ -6,7 +6,6 @@ location: 'Pune, India'
 range: 'July 2019 - April 2020'
 url: 'https://www.symphonytech.com/'
 ---
-
-- Created a fuse box assembly defect detection system that identifies incorrect fuse placements based on colors. Eliminated the need for human inspection, resulting in reduced operating expenses and labor-intensive quality control
-- Utilized Image Processing and a two-step Neural Network with TensorFlow and Faster RCNN models to detect improper fuse box configurations in images, videos, and live feeds. Enhanced model efficiency and performance through dataset creation, augmentation, and fine-tuning techniques
-- Developed a desktop application with GUI interface, packaging the model for user-friendly usage. Added business requirements such as generating PDF reports with detailed results for each fuse box, charts, total error rate, and most frequent errors for auditing
+- Built a computer vision system to detect fuse box assembly defects by identifying incorrect fuse placements based on color, eliminating manual inspection and reducing labor-intensive quality control overhead
+- Engineered a two-stage neural network pipeline using TensorFlow and Faster R-CNN to detect improper fuse box configurations across images, videos, and live feeds, with custom dataset creation, augmentation, and fine-tuning for improved accuracy
+- Packaged the model into a desktop application with a GUI, generating PDF audit reports with per-unit results, error rate charts, and most-frequent-defect summaries for quality review teams
